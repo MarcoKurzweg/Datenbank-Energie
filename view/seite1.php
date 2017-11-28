@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 
 <html>
-	
-	<head>
-		
-		<title> Energieverbrauch und CO2-Emission in Deutschland</title>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="..\bootstrap\css\bootstrap.min.css">
-		<link rel="stylesheet"  href="style.css">
-
-	</head>
-	<body>
-		<header>
-			<h1 > Energieverbrauch und CO2-Emission in Deutschland</h1>
+  
+  <head>
+    
+    <title> Energieverbrauch und CO2-Emission in Deutschland</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="..\bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet"  href="style.css">
+    <script src="../dist/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 > Energieverbrauch und CO2-Emission in Deutschland</h1>
 <ul class="nav">
   <li class="nav-item">
     <a class="nav-link active" href="..\index.html">Home</a>
@@ -29,17 +29,17 @@
 
 
 
-			
-			
+      
+      
 <div id="auswahl">
-	<div class="btn-group" data-toggle="buttons">
-  		<label class="btn btn-primary active" id="option1">
-      	<input type="radio" name="options" id="option1" autocomplete="off" checked>Energieverbrauch
-  		</label>
-  		<label class="btn btn-primary" id="option2">
-   		<input type="radio" name="options" id="option2" autocomplete="off"> CO2-Emission
-  		</label>
-	</div>
+  <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary active" id="option1">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked>Energieverbrauch
+      </label>
+      <label class="btn btn-primary" id="option2">
+      <input type="radio" name="options" id="option2" autocomplete="off"> CO2-Emission
+      </label>
+  </div>
 </div>
 
 
@@ -72,7 +72,7 @@
   </div>
 </div>
 
-		</header>
+    </header>
     
     <div>
       <script src="..\dist\Chart.bundle.js"></script>
@@ -82,16 +82,16 @@
       <div class="chart-container">
         <canvas id="canvas"></canvas>
       </div>
-    <script src="..\js\chart1.js"></script>
+    <?php include "..\js\chart1.php" ?>
+    
     </div>
 
-
-		<script src="..\js\seite1.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-		<script src="..\bootstrap\js\bootstrap.min.js"></script>
-	</body>
-	
-	
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="..\bootstrap\js\bootstrap.min.js"></script>
+  </body>
+  
+  
 </html>
 
